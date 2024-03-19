@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px;
+    box-shadow: 0px 1px .2px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-links a:hover {
+    color: #000000;
+    font-weight: 600;
+}
+
+.left-section span{
+    font-size: 25px;
+}
+
+
+/* branding */
+.branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0px .5px .2px;
+    
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    /* margin-left: 30px; */
+    object-fit: cover;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.search-bar {
+    /* margin: 0 20px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.search-bar i {
+    margin-right: 5px;
+    color: #000000;
+    font-size: 25px;
+}
+
+.search-bar input{
+    line-height: 25px;
+    width: 300px;
+    line-height: 35px;
+    margin-left: 3px;
+    border-radius: 5px;
+    border-color: rgb(5, 191, 191);
+    background-color: #fafafa;
+
+}
+
+.search-bar i:last-child {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #b1b1b1;
+    cursor: pointer;
+}
+
+#location-input{
+    width: 150px;
+}
+/* .user-actions {
+    margin-right: 40px;
+} */
+
+.user-actions button{
+    position: relative;
+    left: 27px;
+    margin-left: 5px;
+}
+
+.user-actions button:hover{
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 2px 1px black;
+}
+
+
+.user-actions i {
+    cursor: pointer;
+    color: #000000;
+}
+
+
+
+
+/* FOOTER SECTION */
+footer {
+    margin-top: 100px;
+    background-color: #f8f9fa;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+}
+/* 
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+    max-width: 300px;
+} */
+
+.footer-left .brand h2 {
+    font-size: 50px;
+    font-family: Reggae One;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-left .brand p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.footer-left .contact-info .email,
+.footer-left .contact-info .phone {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.footer-left .contact-info i {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #007bff;
+}
+
+.footer-left .contact-info p {
+    font-size: 17px;
+    color: #666;
+}
+
+.footer-left .contact-info p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-left .contact-info p a:hover {
+    text-decoration: underline;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: rekkas;
+    color: #333;
+    margin-top: 15px;
+}
+
+.footer-middle ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a,
+.footer-right ul li a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-middle ul li a:hover,
+.footer-right ul li a:hover {
+    color: #333;
+}
+
+
+.footer-right h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-right{
+    padding-right: 50px;
+}
+
+.footer-right .social-media a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.footer-right .social-media a:hover {
+    color: #0056b3;
+}
+
+.copyright {
+    display: block;
+    position: relative;
+    top: 30px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.copyright p {
+    font-size: 14px;
+    color: #666;
+}
