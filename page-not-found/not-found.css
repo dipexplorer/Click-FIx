@@ -1,0 +1,18 @@
+/* align image at ceter */
+.not-found-back{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.not-found-image{
+    height: 200px;
+}
+
+.not-found-content{
+    text-align: center;
+}
+
+.not-found-content h1{
+    font-family: rakkas;
+}
