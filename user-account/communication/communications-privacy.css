@@ -1,0 +1,58 @@
+/* RIGHT_SIDE */
+/* DEFAULT CSS */
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Communications Section Styles */
+.communications-section,
+.privacy-section {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.communications-section {
+    margin-right: 20px;
+}
+
+.privacy-section {
+    margin-left: 20px;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

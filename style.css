@@ -11,22 +11,35 @@ body {
     background-color: #ffffff;
     color: #000000;
     padding: 15px;
-    box-shadow: 0px 1px .2px;
+    box-shadow: 0px 1px .2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links{
+    padding: 10px;
 }
 
 .nav-links a {
     margin: 0 15px;
     text-decoration: none;
-    color: #000000;
+    color: #525252;
+    transition: color 0.3s;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .nav-links a:hover {
     color: #000000;
-    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contact-info a{
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .left-section span{
-    font-size: 25px;
+    font-size: 21px;
+    font-family: arya;
 }
 
 
@@ -43,12 +56,13 @@ body {
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .logo img {
     width: 40px;
     height: 40px;
-    /* margin-left: 30px; */
+    margin-right: 10px;
     object-fit: cover;
 }
 
@@ -85,7 +99,7 @@ body {
 .search-bar i:last-child {
     position: absolute;
     top: 50%;
-    font-size: 18px;
+    font-size: 17px;
     right: 15px;
     transform: translateY(-50%);
     color: #b1b1b1;
@@ -95,9 +109,6 @@ body {
 #location-input{
     width: 150px;
 }
-/* .user-actions {
-    margin-right: 40px;
-} */
 
 .user-actions button{
     position: relative;
@@ -115,6 +126,11 @@ body {
 .user-actions i {
     cursor: pointer;
     color: #000000;
+}
+
+.user-actions a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -137,6 +153,7 @@ footer {
     flex: 1;
     max-width: 300px;
 } */
+
 
 .footer-left .brand h2 {
     font-size: 50px;

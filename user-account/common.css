@@ -1,0 +1,91 @@
+/* Common CSS styles for user account dashboard */
+
+/* DASHBOARD STYLING */
+.dashboard-container {
+    display: flex;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.left-sidebar {
+    background-color: #ffffff;
+    border-right: 1px solid #848383;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(214, 214, 214);
+}
+
+.profile-section {
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    height: 150px;
+}
+
+.profile-pic {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.profile-info {
+    margin-left: 80px;
+}
+
+.profile-info h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* NAV_LINK */
+.navigation-links {
+    padding: 20px;
+}
+
+/* NAVIGATIONS */
+.link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.link i {
+    margin-right: 15px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+}
+
+.link a {
+    color: #333;
+    text-decoration: none;
+}
+
+.link:hover a {
+    font-weight: 600;
+    transition: ease-in .1s;
+}
+
+/* RIGHT_SIDE */
+.main-content {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    padding-left: 35px;
+    background-color: #ffffff;
+    border-right: 1px solid #848383;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    box-shadow: 2px 2px 10px rgb(214, 214, 214);
+}

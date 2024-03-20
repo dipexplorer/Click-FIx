@@ -1,0 +1,51 @@
+/* RIGHT_SIDE */
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    /* margin-top: 20px; */
+}
+
+.main-right-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70%; /* Adjust as needed */
+}
+
+
+.page-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: rakkas;
+}
+
+.update-form h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}

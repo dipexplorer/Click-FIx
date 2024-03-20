@@ -1,36 +1,32 @@
 document.addEventListener('DOMContentLoaded', function () {
     const categoryList = document.querySelectorAll('.category-list li');
-    const searchInput = document.querySelector('.search-bar input');
-    const searchButton = document.querySelector('.search-bar button');
+    const searchInput = document.querySelector('.provider-search-bar input');
     const viewMoreButton = document.querySelector('.view-more button');
-
-    // Function to filter service provider profiles based on category
-    function filterProfilesByCategory(category) {
-        const profileCards = document.querySelectorAll('.profile-list .card');
-        profileCards.forEach(card => {
-            const categories = card.dataset.categories.split(',');
-            if (categories.includes(category) || category === 'all') {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
+    const profileList = document.querySelector('.profile-list');
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = 'No service providers found. Please try a different search term.';
+    errorMessage.style.display = 'none';
+    errorMessage.style.color = 'red';
+    profileList.appendChild(errorMessage);
 
     // Function to filter profiles based on search term and selected category
     function filterProfiles(searchTerm, selectedCategory) {
         // Filter by search term
         const profileCards = document.querySelectorAll('.profile-list .card');
+        let found = false;
         profileCards.forEach(card => {
             const name = card.querySelector('h3').textContent.toLowerCase();
-            if (name.includes(searchTerm.toLowerCase())) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
+            const categories = card.dataset.categories.split(',');
+            const shouldShow = categories.includes(selectedCategory) || selectedCategory === 'all';
+            const containsTerm = name.includes(searchTerm.toLowerCase());
+            card.style.display = (containsTerm && shouldShow) ? 'block' : 'none';
+            if (containsTerm && shouldShow) {
+                found = true;
             }
         });
-        // Filter by selected category
-        filterProfilesByCategory(selectedCategory);
+
+        // Show error message if no service providers found
+        errorMessage.style.display = found ? 'none' : 'block';
     }
 
     // Event listener for category selection
@@ -45,17 +41,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Event listener for search button click
-    searchButton.addEventListener('click', function () {
+    // Function to handle search
+    function handleSearch() {
         const selectedCategory = document.querySelector('.category-list .active').dataset.category;
         filterProfiles(searchInput.value.trim(), selectedCategory);
-    });
+    }
+
+    // Event listener for search button click
+    document.querySelector('.provider-search-bar button').addEventListener('click', handleSearch);
 
     // Event listener for "Enter" key press in search input
     searchInput.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
-            const selectedCategory = document.querySelector('.category-list .active').dataset.category;
-            filterProfiles(searchInput.value.trim(), selectedCategory);
+            handleSearch();
         }
     });
 
@@ -67,7 +65,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Event listener for "View More" button click
-    viewMoreButton.addEventListener('click', function () {
-        loadMoreProfiles();
-    });
+    viewMoreButton.addEventListener('click', loadMoreProfiles);
 });

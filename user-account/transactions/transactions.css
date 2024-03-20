@@ -1,0 +1,66 @@
+/* RIGHT_SIDE */
+/* Main Content */
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.main-right-section {
+    padding: 20px;
+}
+
+.page-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color */
+}
+
+.transactions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.transaction {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.transaction:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Hover effect with slightly larger shadow */
+}
+
+.transaction-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555; /* Dark text color */
+}
+
+.transaction-details p {
+    margin-bottom: 5px;
+    color: #777; /* Lighter text color */
+}
+
+.transaction-status p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.completed {
+    color: green;
+}
+
+.pending {
+    color: orange;
+}
+
+.cancelled {
+    color: red;
+}

@@ -16,3 +16,12 @@
 .not-found-content h1{
     font-family: rakkas;
 }
+
+.not-found-content button{
+    padding: 10px;
+}
+
+.not-found-content button a{
+    text-decoration: none;
+    color: white;
+}

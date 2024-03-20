@@ -1,0 +1,56 @@
+/* RIGHT_SIDE */
+/* Main Content Styles */
+.main-right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.page-info {
+    margin-bottom: 20px;
+}
+
+.page-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.order-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.order {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.order-details p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.order-status p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.order-status p.delivered {
+    color: #28a745;
+}
+
+.order-status p.shipped {
+    color: #ffc107;
+}
+
+.order-status p.pending {
+    color: #dc3545;
+}

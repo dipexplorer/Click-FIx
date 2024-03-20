@@ -1,0 +1,68 @@
+/* RIGHT_SIDE */
+/* DEFAULT CSS */
+
+.help div {
+    margin-bottom: 30px;
+}
+
+.help h2 {
+    color: #007bff;
+    font-family: rakkas;
+}
+
+.help h3{
+    color: #1d1d1d;
+    font-family: rakkas;
+    font-weight: bold;
+}
+
+.help p {
+    line-height: 1.5;
+    font-size: medium;
+}
+
+form {
+    margin-top: 25px;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contactForm input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* FAQs */
+.faq {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.faq:last-child {
+    border-bottom: none;
+}

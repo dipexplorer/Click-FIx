@@ -1,0 +1,77 @@
+/* RIGHT_SIDE */
+/* DEFAULT CSS */
+
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    border-radius: 8px; 
+}
+
+.terms-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-family: rakkas;
+}
+
+.table-of-contents {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.table-of-contents h2 {
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: rakkas;
+}
+
+.table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.table-of-contents li {
+    margin-bottom: 5px;
+}
+
+.table-of-contents a {
+    color: #666;
+    text-decoration: none;
+}
+
+.table-of-contents a:hover {
+    font-weight: 600;
+}
+
+.terms-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.terms-content h2 {
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: rakkas;
+    margin-bottom: 15px;
+}
+
+.terms-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.terms-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+

@@ -26,6 +26,11 @@
     margin-top: 20px;
 }
 
+.buttons a{
+    text-decoration: none;
+    color: white;
+}
+
 .explore-btn,
 .partner-btn {
     position: relative;
