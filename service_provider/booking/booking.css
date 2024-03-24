@@ -1,0 +1,120 @@
+.category-left{
+    width: 25%;
+    margin-right: 15px;
+}
+
+.billing-div{
+    display: flex;
+    justify-content: space-around;
+}
+.bill-left{
+    width: 55%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.bill-right {   
+    width: 35%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bill-right h2 {
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: rakkas;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.technician-details{
+    margin-top: 25px;
+    margin-left: 21px;
+    width: 85%;
+}
+
+.form-group input{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.bill-left h2 {
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: rakkas;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+#billing-form{
+    margin-left: 21px;
+    width: 85%;
+}
+.form-group {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.form-group label{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn-next {
+    /* margin-top: 20px; */
+    position: relative;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* BILL */
+
+.technician-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.technician-details .detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.payment-details {
+    display: none;
+}
+
+.payment-details p {
+    font-weight: bold;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+.payment-note b{
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.payment-note p{
+    padding-left: 17px;
+    font-size: 15px;
+}

@@ -1,0 +1,40 @@
+
+/* Left Side (Category) */
+.left-side {
+    /* width: 25%; */
+    border: 1px solid #cfcdcd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow:0px 2px 3px rgb(135, 135, 135);
+    padding: 30px 25px;
+    /* flex: 20%; */
+}
+
+.left-side h3 {
+    font-size: 25px;
+    font-family: rakkas;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    /* display: flex;
+    align-items: center; */
+    cursor: pointer;
+}
+
+.category-list li.active {
+    font-weight: bold;
+}
+
+.category-list li i {
+    margin-right: 10px;
+    font-size: 23px;
+}

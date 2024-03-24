@@ -135,20 +135,15 @@
     margin-bottom: 5px;
 }
 
-.card button {
+.btn-primary a{
+    text-decoration: none;
     margin-top: 35px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+    color: white;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.card button:hover {
-    background-color: #0056b3;
-}
 
 /* View More Button */
 .view-more {
